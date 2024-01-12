@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, AR_One_Sans } from 'next/font/google'
+import { AR_One_Sans } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-// const inter = Inter({ subsets: ['latin'] })
 const arOneFont = AR_One_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -36,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   Home
                 </Link>
                 <Link className="text-white" href="/experience">
-                  about
+                  Experience
                 </Link>
               </nav>
             </div>
