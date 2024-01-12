@@ -3,6 +3,7 @@ import { AR_One_Sans } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 
 const arOneFont = AR_One_Sans({ subsets: ['latin'] })
 
@@ -15,32 +16,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={arOneFont.className}>
-        <main className="main-container relative mx-auto grid grid-cols-1 md:grid-cols-4">
-          <div className="bg-red-600 p-4 pt-8">
-            <div>
-              <div className="rounded-full border-4 flex flex-row border-gray-200 w-48 h-48 bg-slate-50 overflow-hidden">
-                <Image
-                  className="flex self-end relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-                  src="/bruno-guilherme.png"
-                  alt="Bruno's Profile picture"
-                  width={192}
-                  height={192}
-                  priority
-                />
-              </div>
-            </div>
-            <div>
-              <nav className="flex flex-col uppercase">
-                <Link className="text-white" href="/">
-                  Home
-                </Link>
-                <Link className="text-white" href="/experience">
-                  Experience
-                </Link>
-              </nav>
-            </div>
+        <main className="main-container relative mx-auto flex flex-col">
+          <div className=" p-4 pt-8">
+            <Navbar />
           </div>
-          <div className="bg-green-900 text-white col-span-3 p-4 pt-8">{children}</div>
+          <div className=" text-white p-4 pt-8">{children}</div>
         </main>
       </body>
     </html>
