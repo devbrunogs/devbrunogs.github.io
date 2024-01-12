@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-dark: 20, 20, 20;
+  --background-dark: 50, 50, 50;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -22,11 +22,7 @@ body {
   background: rgb(var(--background-dark));
   font-size: 1em;
   }
-  
-  
-  
-  
-  
+
   .main-container {
-    max-width: 1200px;
+    max-width: 1024px;
 }
