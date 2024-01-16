@@ -9,6 +9,7 @@ interface IJobPositionCardProps {
     skills: string[]
     responsibilities: string[]
   }
+  setFilter: (term: string) => void
 }
 
 export type { IJobPositionCardProps }

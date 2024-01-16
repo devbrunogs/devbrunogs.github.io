@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <article>
-        <h2>About me</h2>
+      <article className="text-base">
+        <h2 className="text-2xl mb-5">About me</h2>
         <p>
           I'm a Software Engineer with over 10 years of experience, having collaborated on diverse projects spanning digital solutions,
           software development, and IT services. My recent focus has been on JS, React, and React Native, although I'm proficient in PHP,

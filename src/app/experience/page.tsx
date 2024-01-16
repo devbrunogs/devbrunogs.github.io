@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { JobPositionCard } from '@/components/JobPositionCard'
 import { jobPositions } from '@/utils/positions'
 import { filterBySearchTerm, debounce } from '@/utils/helpers'
@@ -16,6 +16,12 @@ export default function About() {
     [jobPositions, setFilteredPositions]
   )
 
+  const onSearchChange = (event: React.ChangeEvent<HTMLInputElement> | string) => {
+    const searchValue = typeof event === 'string' ? event : event.target.value
+    setSearchTerm(searchValue)
+    handleSearchTermChange(searchValue)
+  }
+
   return (
     <main className="flex flex-col gap-6">
       <h2 className="text-2xl">Experience</h2>
@@ -24,15 +30,13 @@ export default function About() {
           className="border-b w-full border-gray-100 h-7 px-3 text-center bg-transparent"
           type="text"
           placeholder="Search"
-          onChange={(event) => {
-            setSearchTerm(event.target.value)
-            handleSearchTermChange(event.target.value)
-          }}
+          value={searchTerm}
+          onChange={(event) => onSearchChange(event)}
         />
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-10">
         {filteredPositions.map((jobPosition, index) => (
-          <JobPositionCard jobPosition={jobPosition} key={index} />
+          <JobPositionCard jobPosition={jobPosition} setFilter={onSearchChange} key={index} />
         ))}
         {!filteredPositions.length && (
           <div className="flex flex-col gap-4">

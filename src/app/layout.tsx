@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={arOneFont.className}>
+        <div className="bg-orange-400 text-center">I'm reworking my portfolio page, some things may seem off for a while. Thanks :)</div>
         <main className="main-container relative mx-auto flex flex-col">
           <div className=" p-4 pt-8">
             <Navbar />

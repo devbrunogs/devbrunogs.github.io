@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { IJobPositionCardProps } from '@/utils/interfaces'
 
-const JobPositionCard = ({ jobPosition }: IJobPositionCardProps) => {
+const JobPositionCard = ({ jobPosition, setFilter }: IJobPositionCardProps) => {
   // const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -23,7 +23,11 @@ const JobPositionCard = ({ jobPosition }: IJobPositionCardProps) => {
       </div>
       <div className="flex flex-row max-w-full gap-1 flex-wrap">
         {jobPosition.skills.map((skill, index) => (
-          <button className="flex shrink-0 border border-gray-100 h-7 px-3 text-center rounded-full" key={index}>
+          <button
+            className="flex shrink-0 border border-gray-100 h-7 px-3 text-center rounded-full"
+            key={index}
+            onClick={() => setFilter(skill)}
+          >
             {skill}
           </button>
         ))}

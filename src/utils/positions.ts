@@ -82,7 +82,7 @@ export const jobPositions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     ],
-    skills: ['docker', 'Drupal', 'PHP', 'MySQL', 'Vue', 'Angular', 'REST', 'React', 'JavaScript', 'Git', 'HTML', 'SQL'],
+    skills: ['docker', 'Drupal', 'PHP', 'MySQL', 'Vue', 'Angular', 'REST', 'JavaScript', 'Git', 'HTML', 'SQL'],
   },
   {
     id: 6,
