@@ -14,7 +14,7 @@ export const jobPositions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     ],
-    skills: ['Tailwind', 'TypeScript', 'docker', 'react', 'REST APIs', 'React', 'JavaScript', 'Git', 'HTML'],
+    skills: ['Tailwind', 'React Query', 'TypeScript', 'docker', 'REST APIs', 'React', 'JavaScript', 'Git', 'HTML'],
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const jobPositions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     ],
-    skills: ['Tailwind', 'docker', 'react', 'REST APIs', 'React Native', 'GatsbyJS', 'Redux.js', 'React', 'JavaScript', 'Git', 'HTML'],
+    skills: ['Tailwind', 'docker', 'REST APIs', 'React Native', 'GatsbyJS', 'Redux', 'React', 'JavaScript', 'Git', 'HTML'],
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ export const jobPositions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     ],
-    skills: ['docker', 'WordPress', 'react', 'PHP', 'MySQL', 'REST APIs', 'React', 'JavaScript', 'Git', 'HTML', 'SQL'],
+    skills: ['docker', 'WordPress', 'PHP', 'MySQL', 'REST APIs', 'React', 'JavaScript', 'Git', 'HTML', 'SQL'],
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const jobPositions = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.',
     ],
-    skills: ['docker', 'Enzyme', 'Redux', 'react', 'PHP', 'MySQL', 'REST', 'React', 'JavaScript', 'Git', 'HTML', 'SQL'],
+    skills: ['docker', 'Enzyme', 'Redux', 'PHP', 'MySQL', 'REST', 'React', 'JavaScript', 'Git', 'HTML', 'SQL'],
   },
   {
     id: 5,
